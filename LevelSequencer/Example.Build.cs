@@ -1,3 +1,5 @@
+// Tested on UE 4.27.2
+
 using UnrealBuildTool;
 
 public class Example : ModuleRules
@@ -12,8 +14,8 @@ public class Example : ModuleRules
 			"Engine",
 			"InputCore",
 
-			"LevelSequence", // Required module for playing Level Sequences
-			"MovieScene", // Required module for playing Level Sequences
+			"LevelSequence",  // Required module for playing Level Sequences
+			"MovieScene",  // Required module for playing Level Sequences
 		});
 	}
 }

@@ -1,7 +1,9 @@
+// Tested on UE 4.27.2
+
 #pragma once
 
-#include "LevelSequence.h"  // May require cleaning your build before working
-#include "LevelSequencePlayer.h"
+#include "LevelSequence.h"  // Visual studio may not recognize but works with clean build
+#include "LevelSequencePlayer.h"  // Visual studio may not recognize but works with clean build
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
@@ -20,5 +22,5 @@ protected:
 
 private:
 	ULevelSequence* MySequence = nullptr;
-	ALevelSequenceActor* MySequenceActor = nullptr;
+	ALevelSequenceActor* MySequenceActor = nullptr;  // Actor can be used to end sequence
 };
