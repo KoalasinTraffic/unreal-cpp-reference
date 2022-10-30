@@ -23,6 +23,9 @@ void AMyActor::BeginPlay()
 			//MySequencePlayer->PlayLooping(NumLoops);  // Defaults to no loops
 			//MySequencePlayer->SetPlayRate(PlayRate);  // Defaults to 1.0x playback speed
 			MySequencePlayer->Play();
+			
+			// Equivalent to Get Level Sequence Length where GetLowerBoundValue should be zero
+			//float SequenceLength = MySequence->MovieScene->GetPlaybackRange().GetUpperBoundValue().Value / MySequence->MovieScene->GetTickResolution().AsDecimal();
 		}
 	}
 }
